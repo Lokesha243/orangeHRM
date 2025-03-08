@@ -16,8 +16,8 @@ Feature: OrangeHRM application
     And user closed the application
 
 #    hello manju
+#  i am lokesh
 
-    @regression
  Scenario Outline: Update Employee Details
     Given user launches application
     When user enters the credentials and clicks on login
