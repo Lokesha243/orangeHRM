@@ -15,6 +15,8 @@ Feature: OrangeHRM application
     Then user validates title page
     And user closed the application
 
+#    hello manju
+
     @regression
  Scenario Outline: Update Employee Details
     Given user launches application
