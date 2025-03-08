@@ -18,9 +18,6 @@ Feature: OrangeHRM application
 #    hello manju
 #  i am lokesh
 
-#  i am venu
-
-    @regression
  Scenario Outline: Update Employee Details
     Given user launches application
     When user enters the credentials and clicks on login
