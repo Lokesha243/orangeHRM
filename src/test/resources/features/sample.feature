@@ -8,6 +8,13 @@ Feature: OrangeHRM application
     Then user validates title page
     And user closed the application
 
+  @smoke
+  Scenario: Verify the home page
+    Given user launches application
+    When user enters the credentials and clicks on login
+    Then user validates title page
+    And user closed the application
+
     @regression
  Scenario Outline: Update Employee Details
     Given user launches application
