@@ -25,10 +25,10 @@ public void driverSetup(){
         prop= new Properties();
         prop.load(fis);
 
-        logger= Logger.getLogger("orangeHRM");
-        PropertyConfigurator.configure("Properties/Log4j.properties");
+        // logger= Logger.getLogger("orangeHRM");
+        // PropertyConfigurator.configure("Properties/Log4j.properties");
 
-        logger.info("**** Launching the browser ****");
+        // logger.info("**** Launching the browser ****");
         String browser= prop.getProperty("browserName");
         if (browser.equalsIgnoreCase("chrome")){
             driver=new ChromeDriver();
@@ -45,10 +45,10 @@ public void driverSetup(){
 
 }
     public void enterCredentials() throws Exception {
-        logger= Logger.getLogger("orangeHRM");
+        // logger= Logger.getLogger("orangeHRM");
         PropertyConfigurator.configure("Properties/Log4j.properties");
 
-        logger.info("**** Opening the URL ****");
+        // logger.info("**** Opening the URL ****");
         String browserUrl=prop.getProperty("url");
         System.out.println("url from property file : "+browserUrl);
         driver.get(browserUrl);
@@ -65,7 +65,7 @@ public void driverSetup(){
 
     }
     public void closeApplication(){
-        logger.info("**** Closing the Application ****");
+        // logger.info("**** Closing the Application ****");
         driver.quit();
     }
 
@@ -76,7 +76,7 @@ public void driverSetup(){
 
     }
     public void EmployeeDetails() throws InterruptedException {
-        logger.info("**** Entering the MyInfo details ****");
+        // logger.info("**** Entering the MyInfo details ****");
         driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("Lokesh");
         driver.findElement(By.xpath("//input[@name='middleName']")).sendKeys("A");
         driver.findElement(By.xpath("//input[@name='lastName']")).sendKeys("N");
