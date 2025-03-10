@@ -1,6 +1,6 @@
 package pageObjects;
 
-import org.apache.log4j.PropertyConfigurator;
+// import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 public class orangeHRMPageObjects {
     WebDriver driver;
